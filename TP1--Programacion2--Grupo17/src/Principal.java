@@ -20,5 +20,7 @@ public class Principal {
         System.out.println("Flotante = "+ flotante);
         System.out.println("Doble = "+ doble);
         System.out.println("Flotante = "+ cadena);
+        
+        float[] flotantes={5.2f, 35.4f, 25.48f, 4.59f, 17.9f};
     }
 }
