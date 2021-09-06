@@ -10,10 +10,11 @@
  */
 public class Principal {
     public static void main(String[] args) {
-        int entero;
+        int entero = 5;
         float flotante;
-        double doble;
-        String cadena;
+        flotante = 25.4f;
+        double doble = 3.645;
+        String cadena = "Esto es una cadena";
         
         System.out.println("Entero = "+ entero);
         System.out.println("Flotante = "+ flotante);
