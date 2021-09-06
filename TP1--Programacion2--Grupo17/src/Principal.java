@@ -15,5 +15,9 @@ public class Principal {
         double doble;
         String cadena;
         
+        System.out.println("Entero = "+ entero);
+        System.out.println("Flotante = "+ flotante);
+        System.out.println("Doble = "+ doble);
+        System.out.println("Flotante = "+ cadena);
     }
 }
