@@ -52,6 +52,16 @@ public class PrimeraClase {
         vector[3].unaCadena = "Mesas";
         
         mostrarVectorObjetos(vector);
+        
+        //Borrado del elemento 2 de vector
+        
+        int i;
+        for(i=2; i<vector.length - 1; i++){
+            vector[i] = vector[i+1];
+        }
+        vector[i]=null;
+        
+        mostrarVectorObjetos(vector);
     }
     
     static void mostrarVectorObjetos(PrimeraClase[] vector){
