@@ -29,5 +29,14 @@ public class Principal {
         for(i=0; i<flotantes.length; i++){
             System.out.println("\t"+ flotantes[i]);            
         }
+        
+        float promedio = 0f, suma = 0f;
+        
+        for(i=0; i<flotantes.length; i++){
+            suma = suma + flotantes[i];
+        }
+        promedio = suma / flotantes.length;
+        
+        System.out.println("El promedio de los elementos del arreglo de flotantes es "+promedio);
     }
 }
