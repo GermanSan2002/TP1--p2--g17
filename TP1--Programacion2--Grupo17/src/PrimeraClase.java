@@ -22,5 +22,16 @@ public class PrimeraClase {
         PrimeraClase objeto3 = new PrimeraClase();
         PrimeraClase objeto4 = new PrimeraClase();
         PrimeraClase objeto5 = new PrimeraClase();
+        
+        objeto1.unaCadena = "Aire acondicionado";
+        objeto1.unEntero = 4;
+        objeto2.unaCadena = "Pizzarra";
+        objeto2.unEntero = 2;
+        objeto3.unaCadena = "Proyectores";
+        objeto3.unEntero = 2;
+        objeto4.unaCadena = "Asientos";
+        objeto4.unEntero = 200;
+        objeto5.unaCadena = "Ventiladores";
+        objeto5.unEntero = 4;
     }
 }
