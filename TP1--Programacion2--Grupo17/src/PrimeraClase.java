@@ -12,8 +12,10 @@ public class PrimeraClase {
     String unaCadena;
     int unEntero;
     
-    void mostrar(){
-        
+     public void mostrar(){
+        System.out.println("Los atributos son:");
+        System.out.println("tUnaCadena = "+ unaCadena);
+        System.out.println("tUnEntero = "+ unEntero);
     }
     
     public static void main(String[] args) {
@@ -33,5 +35,6 @@ public class PrimeraClase {
         objeto4.unEntero = 200;
         objeto5.unaCadena = "Ventiladores";
         objeto5.unEntero = 4;
+
     }
 }
