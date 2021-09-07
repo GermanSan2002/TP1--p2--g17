@@ -43,6 +43,15 @@ public class PrimeraClase {
         vector[4]=objeto5;
         
         mostrarVectorObjetos(vector);
+        
+        vector[2].unaCadena = "Pupitre alto";
+        vector[2].unEntero = 25;
+        vector[4].unaCadena = "Alcohol en gel";
+        vector[0].unEntero = 15;
+        vector[0].unaCadena = "Tizas";
+        vector[3].unaCadena = "Mesas";
+        
+        mostrarVectorObjetos(vector);
     }
     
     static void mostrarVectorObjetos(PrimeraClase[] vector){
