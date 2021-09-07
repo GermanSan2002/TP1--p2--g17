@@ -9,5 +9,14 @@
  * @author Usuario
  */
 public class PrimeraClase {
+    String unaCadena;
+    int unEntero;
     
+    void mostrar(){
+        
+    }
+    
+    public static void main(String[] args) {
+        
+    }
 }
