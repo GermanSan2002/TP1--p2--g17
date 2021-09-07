@@ -17,6 +17,10 @@ public class PrimeraClase {
     }
     
     public static void main(String[] args) {
-        
+        PrimeraClase objeto1 = new PrimeraClase();
+        PrimeraClase objeto2 = new PrimeraClase();
+        PrimeraClase objeto3 = new PrimeraClase();
+        PrimeraClase objeto4 = new PrimeraClase();
+        PrimeraClase objeto5 = new PrimeraClase();
     }
 }
