@@ -46,6 +46,16 @@ public class PrimeraClase {
         objetos.add(objeto5);
         
         mostrarVectorObjetos(objetos);
+        
+        //modificar elemento 3 (posicion 2)
+        PrimeraClase objeto6 = new PrimeraClase();
+        objeto6 = objetos.get(2);
+        objeto6.unaCadena = "Lapicera";
+        objeto6.unEntero = 25;
+        objetos.remove(2);
+        objetos.add(2, objeto6);
+        
+        mostrarVectorObjetos(objetos);
     }
     
     static void mostrarVectorObjetos(ArrayList<PrimeraClase> lista){
