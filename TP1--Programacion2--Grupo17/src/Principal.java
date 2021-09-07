@@ -30,13 +30,20 @@ public class Principal {
             System.out.println("\t"+ flotantes[i]);            
         }
         
-        float promedio = 0f, suma = 0f;
-        
-        for(i=0; i<flotantes.length; i++){
-            suma = suma + flotantes[i];
-        }
-        promedio = suma / flotantes.length;
+        float promedio = promedio(flotantes);
         
         System.out.println("El promedio de los elementos del arreglo de flotantes es "+promedio);
+    }
+    
+    static float promedio(float[] vector){
+        int i;
+        float suma = 0f, promedio;
+        
+        for(i=0; i<vector.length; i++){
+            suma = suma + vector[i];
+        }
+        promedio = suma / vector.length;
+        
+        return promedio;
     }
 }
