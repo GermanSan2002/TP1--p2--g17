@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -35,42 +38,23 @@ public class PrimeraClase {
         objeto5.unaCadena = "Ventiladores";
         objeto5.unEntero = 4;
         
-        PrimeraClase[] vector = new PrimeraClase[5];
-        vector[0]=objeto1;
-        vector[1]=objeto2;
-        vector[2]=objeto3;
-        vector[3]=objeto4;
-        vector[4]=objeto5;
+        ArrayList<PrimeraClase> objetos = new ArrayList<>();
+        objetos.add(objeto1);
+        objetos.add(objeto2);
+        objetos.add(objeto3);
+        objetos.add(objeto4);
+        objetos.add(objeto5);
         
-        mostrarVectorObjetos(vector);
-        
-        vector[2].unaCadena = "Pupitre alto";
-        vector[2].unEntero = 25;
-        vector[4].unaCadena = "Alcohol en gel";
-        vector[0].unEntero = 15;
-        vector[0].unaCadena = "Tizas";
-        vector[3].unaCadena = "Mesas";
-        
-        mostrarVectorObjetos(vector);
-        
-        //Borrado del elemento 2 de vector
-        
-        int i;
-        for(i=2; i<vector.length - 1; i++){
-            vector[i] = vector[i+1];
-        }
-        vector[i]=null;
-        
-        mostrarVectorObjetos(vector);
+        mostrarVectorObjetos(objetos);
     }
     
-    static void mostrarVectorObjetos(PrimeraClase[] vector){
-        int i=0;
+    static void mostrarVectorObjetos(ArrayList<PrimeraClase> lista){
+        int i=1;
         
         System.out.println("Los elementos del vector son:");
-        for(PrimeraClase r: vector){
-            System.out.println("Vector["+i+"]:");
+        for(PrimeraClase r: lista){
             if(r!=null){
+                System.out.println("Objeto "+i+":");
                 r.mostrar();
             }
             i++;
