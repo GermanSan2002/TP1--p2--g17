@@ -12,10 +12,9 @@ public class PrimeraClase {
     String unaCadena;
     int unEntero;
     
-     public void mostrar(){
-        System.out.println("Los atributos son:");
-        System.out.println("tUnaCadena = "+ unaCadena);
-        System.out.println("tUnEntero = "+ unEntero);
+    public void mostrar(){
+        System.out.println("\tUnaCadena = "+ unaCadena);
+        System.out.println("\tUnEntero = "+ unEntero);
     }
     
     public static void main(String[] args) {
@@ -35,6 +34,25 @@ public class PrimeraClase {
         objeto4.unEntero = 200;
         objeto5.unaCadena = "Ventiladores";
         objeto5.unEntero = 4;
-
+        
+        PrimeraClase[] vector = new PrimeraClase[5];
+        vector[0]=objeto1;
+        vector[1]=objeto2;
+        vector[2]=objeto3;
+        vector[3]=objeto4;
+        vector[4]=objeto5;
+        
+        mostrarVectorObjetos(vector);
+    }
+    
+    static void mostrarVectorObjetos(PrimeraClase[] vector){
+        int i=0;
+        
+        System.out.println("Los elementos del vector son:");
+        for(PrimeraClase r: vector){
+            System.out.println("Vector["+i+"]:");
+            r.mostrar();
+            i++;
+        }
     }
 }
