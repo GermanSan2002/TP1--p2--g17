@@ -70,7 +70,9 @@ public class PrimeraClase {
         System.out.println("Los elementos del vector son:");
         for(PrimeraClase r: vector){
             System.out.println("Vector["+i+"]:");
-            r.mostrar();
+            if(r!=null){
+                r.mostrar();
+            }
             i++;
         }
     }
